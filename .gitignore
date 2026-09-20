@@ -1,0 +1,30 @@
+# Data - never commit (download with scripts/get_data.sh or attach on Kaggle)
+../archive/
+archive/
+data/
+outputs/processed/
+outputs/models/
+*.h5
+*.keras
+*.weights.h5
+
+# Keep figures + splits (small, needed for report/reproducibility)
+!outputs/figures/
+!outputs/splits/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+drenv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+kaggle.json

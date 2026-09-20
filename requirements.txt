@@ -1,0 +1,12 @@
+# Pinned for reproducibility. Kaggle notebooks already ship TF/Keras;
+# these are the versions the project was developed against.
+tensorflow>=2.15,<2.17
+keras>=3.0
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.3
+opencv-python-headless>=4.8
+matplotlib>=3.8
+seaborn>=0.13
+tqdm>=4.66
+gradio>=4.0
