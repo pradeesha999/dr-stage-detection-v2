@@ -14,7 +14,9 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
       dr_project/
         01_eda.ipynb            # dataset exploration
         02_preprocessing.ipynb  # preprocessing pipeline + before/after figs
-        03_train.ipynb          # augmentation, model, training
+        03_augmentation.ipynb   # augmentation + balancing evidence
+        04_train.ipynb          # model, training
+        05_evaluate.ipynb       # metrics, curves, confusion matrix, Grad-CAM
         app/  (demo: Gradio/Streamlit for video)
         src/  (reusable .py modules: preprocess.py, data.py, model.py, utils.py)
         figures/                # every plot saved here → report
