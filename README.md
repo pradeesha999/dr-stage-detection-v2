@@ -40,7 +40,7 @@ dr_project/
 See [SETUP_UBUNTU_GPU.md](SETUP_UBUNTU_GPU.md). Then:
 
 ```bash
-git clone https://github.com/pradeesha999/dr-stage-detection.git dr_project
+git clone https://github.com/pradeesha999/dr-stage-detection-v2.git dr_project
 cd dr_project && bash scripts/get_data.sh
 ```
 
