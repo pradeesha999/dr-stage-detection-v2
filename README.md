@@ -12,7 +12,7 @@ Plan / progress: [PLAN.md](PLAN.md)
 ```
 dr_project/
   src/               reusable modules (config, data, preprocess, augment, model, ...)
-  notebooks/         01_eda -> 02_preprocessing -> 03_train -> 04_evaluate
+  notebooks/         01_eda -> 02_preprocessing -> 03_augmentation -> 04_train -> 05_evaluate
   app/               Gradio demo used for the video
   scripts/           get_data.sh (download dataset via Kaggle CLI)
   outputs/
@@ -48,5 +48,5 @@ cd dr_project && bash scripts/get_data.sh
 `pip install -r requirements.txt`; dataset in `../archive/`; notebooks 01-02 run fine on CPU.
 
 ## Order of execution
-`01_eda.ipynb` (index + split) -> `02_preprocessing.ipynb` (cache processed images)
--> `03_train.ipynb` (GPU) -> `04_evaluate.ipynb` -> `app/`.
+`01_eda.ipynb` (index + split) -> `02_preprocessing.ipynb` (cache processed images) -> `03_augmentation.ipynb`
+-> `04_train.ipynb` (GPU) -> `05_evaluate.ipynb` -> `app/`.

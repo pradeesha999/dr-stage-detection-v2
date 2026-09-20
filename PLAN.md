@@ -15,7 +15,6 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
         01_eda.ipynb            # dataset exploration
         02_preprocessing.ipynb  # preprocessing pipeline + before/after figs
         03_train.ipynb          # augmentation, model, training
-        04_evaluate.ipynb       # metrics, curves, confusion matrix, Grad-CAM
         app/  (demo: Gradio/Streamlit for video)
         src/  (reusable .py modules: preprocess.py, data.py, model.py, utils.py)
         figures/                # every plot saved here → report
@@ -41,10 +40,10 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 3 — Augmentation & Balancing [10]
 
-- [ ] 3.1 Augmentations (retina-safe): rotation (any angle — fundus is rotation-invariant), h/v flip, small zoom, brightness/contrast jitter. Avoid heavy shear/colour shift (changes lesion look).
-- [ ] 3.2 Visualise: one image → 8 augmented versions.
-- [ ] 3.3 Imbalance: choose + justify. Recommended: class-weighted loss **and** oversampling minority classes in sampler. Show class distribution before/after.
-- [ ] 3.4 Ablation (small): train few epochs with vs without balancing → table for report.
+- [x] 3.1 Augmentations (retina-safe): rotation (any angle — fundus is rotation-invariant), h/v flip, small zoom, brightness/contrast jitter. Avoid heavy shear/colour shift (changes lesion look).
+- [x] 3.2 Visualise: one image → 8 augmented versions.
+- [x] 3.3 Imbalance: choose + justify. Recommended: class-weighted loss **and** oversampling minority classes in sampler. Show class distribution before/after.
+- [ ] 3.4 (done in Phase 4 training) Ablation: train few epochs with vs without balancing → table for report.
 
 ## Phase 4 — CNN Architecture & Transfer Learning [20] ← biggest chunk
 
