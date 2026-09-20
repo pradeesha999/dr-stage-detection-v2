@@ -49,19 +49,19 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 4 — CNN Architecture & Transfer Learning [20] ← biggest chunk
 
-- [ ] 4.1 Baseline: small custom CNN from scratch (few epochs) → proves transfer learning helps.
-- [ ] 4.2 Main model: pretrained ImageNet backbone (EfficientNet-B0/B3 or ResNet50) + GAP + Dropout + Dense(5).
-- [ ] 4.3 Two-stage: (a) freeze backbone, train head; (b) unfreeze top N blocks, low LR fine-tune.
-- [ ] 4.4 Compare >= 2 backbones (e.g. ResNet50 vs EfficientNet) → table: params, val acc, F1, train time.
-- [ ] 4.5 Hyperparameter tuning: LR, dropout, image size, batch size — record in table. Justify final choice.
+- [x] 4.1 (code ready, GPU run pending) Baseline: small custom CNN from scratch (few epochs) → proves transfer learning helps.
+- [x] 4.2 (code ready, GPU run pending) Main model: pretrained ImageNet backbone (EfficientNet-B0/B3 or ResNet50) + GAP + Dropout + Dense(5).
+- [x] 4.3 (code ready, GPU run pending) Two-stage: (a) freeze backbone, train head; (b) unfreeze top N blocks, low LR fine-tune.
+- [x] 4.4 (code ready, GPU run pending) Compare >= 2 backbones (e.g. ResNet50 vs EfficientNet) → table: params, val acc, F1, train time.
+- [x] 4.5 (code ready, GPU run pending) Hyperparameter tuning: LR, dropout, image size, batch size — record in table. Justify final choice.
 - [ ] 4.6 Diagram of final architecture for report.
 
 ## Phase 5 — Training Strategy [10]
 
-- [ ] 5.1 Callbacks: EarlyStopping (val loss), ReduceLROnPlateau or cosine schedule, ModelCheckpoint (best val F1/kappa).
-- [ ] 5.2 Overfitting control: dropout, augmentation, weight decay, label smoothing (optional).
-- [ ] 5.3 Log every run (CSV logger / W&B) → experiment table in report.
-- [ ] 5.4 Save `history` for curves + final weights (.keras / .pt).
+- [x] 5.1 (code ready, GPU run pending) Callbacks: EarlyStopping (val loss), ReduceLROnPlateau or cosine schedule, ModelCheckpoint (best val F1/kappa).
+- [x] 5.2 (code ready, GPU run pending) Overfitting control: dropout, augmentation, weight decay, label smoothing (optional).
+- [x] 5.3 (code ready, GPU run pending) Log every run (CSV logger / W&B) → experiment table in report.
+- [x] 5.4 (code ready, GPU run pending) Save `history` for curves + final weights (.keras / .pt).
 
 ## Phase 6 — Evaluation [15]
 
