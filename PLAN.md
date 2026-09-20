@@ -85,7 +85,7 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 9 — Report (<= 20 pages) [10 + 5]
 
-- [ ] 9.1 Structure: Title → Intro & DR background → Dataset → Preprocessing → Augmentation/Balancing → Model & Transfer Learning → Training → Results → Discussion (impact, deployment, limits, ethics, future work) → Conclusion → References → Appendix (video URL, repo link).
+- [~] 9.1 (draft §1-4 written in report/report.md) Structure: Title → Intro & DR background → Dataset → Preprocessing → Augmentation/Balancing → Model & Transfer Learning → Training → Results → Discussion (impact, deployment, limits, ethics, future work) → Conclusion → References → Appendix (video URL, repo link).
 - [ ] 9.2 Every section = figure + explanation (rubric wants "graphical evidence" for all steps).
 - [ ] 9.3 Map each section to LO1–LO4 explicitly.
 - [ ] 9.4 Innovation/critical discussion [5]: real clinic use, edge deployment, model limits, dataset bias, future (higher res, ordinal loss, ensembles).
