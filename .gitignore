@@ -11,6 +11,7 @@ outputs/models/
 # Keep figures + splits (small, needed for report/reproducibility)
 !outputs/figures/
 !outputs/splits/
+!outputs/runs/
 
 # Python / Jupyter
 __pycache__/

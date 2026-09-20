@@ -1,0 +1,13 @@
+{
+  "model": "baseline_cnn",
+  "backbone": "-",
+  "balance": "oversample",
+  "augment": true,
+  "dropout": 0.3,
+  "lr_head": 0.001,
+  "lr_ft": null,
+  "unfreeze": null,
+  "batch_size": 32,
+  "params_M": 1.18,
+  "trainable_M": 1.17
+}

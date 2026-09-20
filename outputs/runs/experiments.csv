@@ -1,0 +1,5 @@
+run,model,backbone,balance,augment,dropout,lr_head,lr_ft,unfreeze,batch_size,params_M,trainable_M,epochs_run,stage_boundary,best_epoch,best_val_f1,val_acc_at_best,val_loss_at_best,train_acc_at_best,train_min,sec_per_epoch
+baseline_cnn,baseline_cnn,-,oversample,True,0.3,0.001,,,32,1.18,1.17,10,0,8,0.3367,0.7147,1.1772,0.4131,14.0,83.8
+ablation_balance_none,transfer,EfficientNetB0,none,True,0.3,0.001,,,32,4.06,0.01,5,5,1,0.2444,0.7346,0.9952,0.7322,4.4,52.3
+ablation_balance_weights,transfer,EfficientNetB0,weights,True,0.3,0.001,,,32,4.06,0.01,5,5,4,0.2738,0.4879,1.3529,0.3481,4.5,54.4
+ablation_balance_oversample,transfer,EfficientNetB0,oversample,True,0.3,0.001,,,32,4.06,0.01,5,5,3,0.3012,0.5338,1.3249,0.3861,3.6,43.4

@@ -1,0 +1,13 @@
+{
+  "model": "transfer",
+  "backbone": "EfficientNetB0",
+  "balance": "weights",
+  "augment": true,
+  "dropout": 0.3,
+  "lr_head": 0.001,
+  "lr_ft": null,
+  "unfreeze": null,
+  "batch_size": 32,
+  "params_M": 4.06,
+  "trainable_M": 0.01
+}

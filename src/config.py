@@ -38,7 +38,8 @@ FIG_DIR = WORK_DIR / "figures"
 MODEL_DIR = WORK_DIR / "models"
 SPLIT_DIR = WORK_DIR / "splits"
 PROC_DIR = WORK_DIR / "processed"      # cached preprocessed images
-for _d in (FIG_DIR, MODEL_DIR, SPLIT_DIR):
+RUN_DIR = WORK_DIR / "runs"            # per-run histories / logs (small, committed)
+for _d in (FIG_DIR, MODEL_DIR, SPLIT_DIR, RUN_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -62,6 +63,8 @@ NUM_CLASSES = len(CLASS_NAMES)
 IMG_SIZE = 224
 BATCH_SIZE = 32
 SEED = 42
+LABEL_SMOOTHING = 0.1   # softens one-hot targets; regularises + suits noisy DR labels
+WEIGHT_DECAY = 1e-4     # AdamW decoupled weight decay
 
 # Split fractions (by patient, see data.py)
 TRAIN_FRAC, VAL_FRAC, TEST_FRAC = 0.70, 0.15, 0.15
