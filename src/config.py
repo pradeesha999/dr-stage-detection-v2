@@ -10,7 +10,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # Data location
 # ---------------------------------------------------------------------------
-KAGGLE_INPUT = Path("/kaggle/input/diabetic-retinopathy-2015-data-colored-resized")
+KAGGLE_INPUT = Path("/kaggle/input/datasets/sovitrath/diabetic-retinopathy-2015-data-colored-resized")
 LOCAL_INPUT = Path(__file__).resolve().parents[2] / "archive"
 
 
