@@ -79,7 +79,7 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 8 — Demo App + Video [part of 8]
 
-- [ ] 8.1 Gradio/Streamlit app: upload fundus image → preprocessed preview → predicted stage + probabilities + Grad-CAM.
+- [x] 8.1 Gradio/Streamlit app: upload fundus image → preprocessed preview → predicted stage + probabilities + Grad-CAM.
 - [ ] 8.2 Record 2–4 min screen video: dataset → preprocessing → training curves → app inference.
 - [ ] 8.3 Upload (YouTube unlisted / Google Drive), put URL in report.
 
