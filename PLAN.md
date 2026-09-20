@@ -65,11 +65,11 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 6 — Evaluation [15]
 
-- [ ] 6.1 Accuracy + loss curves (train vs val), both phases on one plot.
-- [ ] 6.2 Test set: accuracy, per-class precision/recall/F1, macro + weighted F1, confusion matrix (raw + normalised).
-- [ ] 6.3 Extra (DR-standard): Quadratic Weighted Kappa, ROC-AUC per class, binary "referable DR" (Moderate+) sensitivity/specificity.
-- [ ] 6.4 Error analysis: show misclassified examples, discuss adjacent-stage confusion (Mild↔Moderate).
-- [ ] 6.5 Grad-CAM heatmaps → shows model looks at lesions, not artefacts.
+- [x] 6.1 (code ready, needs trained model) Accuracy + loss curves (train vs val), both phases on one plot.
+- [x] 6.2 (code ready, needs trained model) Test set: accuracy, per-class precision/recall/F1, macro + weighted F1, confusion matrix (raw + normalised).
+- [x] 6.3 (code ready, needs trained model) Extra (DR-standard): Quadratic Weighted Kappa, ROC-AUC per class, binary "referable DR" (Moderate+) sensitivity/specificity.
+- [x] 6.4 (code ready, needs trained model) Error analysis: show misclassified examples, discuss adjacent-stage confusion (Mild↔Moderate).
+- [x] 6.5 (code ready, needs trained model) Grad-CAM heatmaps → shows model looks at lesions, not artefacts.
 
 ## Phase 7 — Code Quality [10]
 
