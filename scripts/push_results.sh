@@ -12,7 +12,10 @@ git add notebooks/*.ipynb outputs/figures outputs/splits outputs/metrics 2>/dev/
 if git diff --cached --quiet; then echo "nothing to push"; exit 0; fi
 git commit -q -m "Results from $(hostname) run on $(date -u +'%Y-%m-%d %H:%M UTC')"
 if [ -z "${GITHUB_TOKEN:-}" ]; then echo "GITHUB_TOKEN not set"; exit 1; fi
-if git push -q "https://${GITHUB_TOKEN}@github.com/pradeesha999/dr-stage-detection-v2.git" HEAD:main; then
+AUTH="https://${GITHUB_TOKEN}@github.com/pradeesha999/dr-stage-detection-v2.git"
+# main may have moved while this run was training: replay our results commit on top of it
+git fetch -q "$AUTH" main && git rebase -q FETCH_HEAD || { git rebase --abort 2>/dev/null; echo "rebase failed"; }
+if git push -q "$AUTH" HEAD:main; then
   echo "pushed"
 else
   echo "push failed - undoing local commit so the next sync is clean"
