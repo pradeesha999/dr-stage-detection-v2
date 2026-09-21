@@ -1,0 +1,9 @@
+,precision,recall,f1-score,support
+No_DR,0.817,0.914,0.863,3875
+Mild,0.128,0.014,0.025,368
+Moderate,0.437,0.359,0.394,790
+Severe,0.446,0.287,0.349,129
+Proliferate_DR,0.436,0.667,0.527,108
+accuracy,0.748,0.748,0.748,0
+macro avg,0.453,0.448,0.432,5270
+weighted avg,0.695,0.748,0.715,5270

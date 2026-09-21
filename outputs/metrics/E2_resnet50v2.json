@@ -1,0 +1,25 @@
+{
+  "run": "E2_resnet50v2",
+  "backbone": "resnet50v2",
+  "balancing": "sqrt",
+  "img_size": 224,
+  "batch_size": 32,
+  "epochs_head": 3,
+  "epochs_finetune": 5,
+  "lr_head": 0.001,
+  "lr_finetune": 0.0001,
+  "unfreeze_fraction": 0.3,
+  "dropout": 0.3,
+  "label_smoothing": 0.0,
+  "notes": "backbone comparison",
+  "epochs_run": 8,
+  "params": {
+    "trainable": 17706501,
+    "non_trainable": 6384128,
+    "total": 24090629
+  },
+  "val_accuracy": 0.7384206529992406,
+  "val_macro_f1": 0.4193156477843349,
+  "val_qwk": 0.5362820708874743,
+  "minutes": 31.9
+}

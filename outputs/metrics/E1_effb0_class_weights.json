@@ -1,0 +1,25 @@
+{
+  "run": "E1_effb0_class_weights",
+  "backbone": "efficientnetb0",
+  "balancing": "class_weights",
+  "img_size": 224,
+  "batch_size": 32,
+  "epochs_head": 3,
+  "epochs_finetune": 4,
+  "lr_head": 0.001,
+  "lr_finetune": 0.0001,
+  "unfreeze_fraction": 0.3,
+  "dropout": 0.3,
+  "label_smoothing": 0.0,
+  "notes": "imbalance ablation",
+  "epochs_run": 7,
+  "params": {
+    "trainable": 3383841,
+    "non_trainable": 994951,
+    "total": 4378792
+  },
+  "val_accuracy": 0.4386864085041762,
+  "val_macro_f1": 0.2895881097206213,
+  "val_qwk": 0.36671741177377315,
+  "minutes": 32.6
+}
