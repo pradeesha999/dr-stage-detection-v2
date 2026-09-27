@@ -49,27 +49,27 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 4 — CNN Architecture & Transfer Learning [20] ← biggest chunk
 
-- [x] 4.1 (GPU run in progress on Kaggle) Baseline: small custom CNN from scratch (few epochs) → proves transfer learning helps.
-- [x] 4.2 (GPU run in progress on Kaggle) Main model: pretrained ImageNet backbone (EfficientNet-B0/B3 or ResNet50) + GAP + Dropout + Dense(5).
-- [x] 4.3 (GPU run in progress on Kaggle) Two-stage: (a) freeze backbone, train head; (b) unfreeze top N blocks, low LR fine-tune.
-- [x] 4.4 (GPU run in progress on Kaggle) Compare >= 2 backbones (e.g. ResNet50 vs EfficientNet) → table: params, val acc, F1, train time.
-- [x] 4.5 (GPU run in progress on Kaggle) Hyperparameter tuning: LR, dropout, image size, batch size — record in table. Justify final choice.
+- [x] 4.1 (done) Baseline: small custom CNN from scratch (few epochs) → proves transfer learning helps.
+- [x] 4.2 (done) Main model: pretrained ImageNet backbone (EfficientNet-B0/B3 or ResNet50) + GAP + Dropout + Dense(5).
+- [x] 4.3 (done) Two-stage: (a) freeze backbone, train head; (b) unfreeze top N blocks, low LR fine-tune.
+- [x] 4.4 (done) Compare >= 2 backbones (e.g. ResNet50 vs EfficientNet) → table: params, val acc, F1, train time.
+- [x] 4.5 (done) Hyperparameter tuning: LR, dropout, image size, batch size — record in table. Justify final choice.
 - [ ] 4.6 Diagram of final architecture for report.
 
 ## Phase 5 — Training Strategy [10]
 
-- [x] 5.1 (GPU run in progress on Kaggle) Callbacks: EarlyStopping (val loss), ReduceLROnPlateau or cosine schedule, ModelCheckpoint (best val F1/kappa).
-- [x] 5.2 (GPU run in progress on Kaggle) Overfitting control: dropout, augmentation, weight decay, label smoothing (optional).
-- [x] 5.3 (GPU run in progress on Kaggle) Log every run (CSV logger / W&B) → experiment table in report.
-- [x] 5.4 (GPU run in progress on Kaggle) Save `history` for curves + final weights (.keras / .pt).
+- [x] 5.1 (done) Callbacks: EarlyStopping (val loss), ReduceLROnPlateau or cosine schedule, ModelCheckpoint (best val F1/kappa).
+- [x] 5.2 (done) Overfitting control: dropout, augmentation, weight decay, label smoothing (optional).
+- [x] 5.3 (done) Log every run (CSV logger / W&B) → experiment table in report.
+- [x] 5.4 (done) Save `history` for curves + final weights (.keras / .pt).
 
 ## Phase 6 — Evaluation [15]
 
-- [x] 6.1 (code ready, needs trained model) Accuracy + loss curves (train vs val), both phases on one plot.
-- [x] 6.2 (code ready, needs trained model) Test set: accuracy, per-class precision/recall/F1, macro + weighted F1, confusion matrix (raw + normalised).
-- [x] 6.3 (code ready, needs trained model) Extra (DR-standard): Quadratic Weighted Kappa, ROC-AUC per class, binary "referable DR" (Moderate+) sensitivity/specificity.
-- [x] 6.4 (code ready, needs trained model) Error analysis: show misclassified examples, discuss adjacent-stage confusion (Mild↔Moderate).
-- [x] 6.5 (code ready, needs trained model) Grad-CAM heatmaps → shows model looks at lesions, not artefacts.
+- [x] 6.1 (done) Accuracy + loss curves (train vs val), both phases on one plot.
+- [x] 6.2 (done) Test set: accuracy, per-class precision/recall/F1, macro + weighted F1, confusion matrix (raw + normalised).
+- [x] 6.3 (done) Extra (DR-standard): Quadratic Weighted Kappa, ROC-AUC per class, binary "referable DR" (Moderate+) sensitivity/specificity.
+- [x] 6.4 (done) Error analysis: show misclassified examples, discuss adjacent-stage confusion (Mild↔Moderate).
+- [x] 6.5 (done) Grad-CAM heatmaps → shows model looks at lesions, not artefacts.
 
 ## Phase 7 — Code Quality [10]
 
@@ -85,10 +85,10 @@ Marks in brackets map to rubric. Do tasks in order — each builds on previous.
 
 ## Phase 9 — Report (<= 20 pages) [10 + 5]
 
-- [~] 9.1 (draft §1-4 written in report/report.md) Structure: Title → Intro & DR background → Dataset → Preprocessing → Augmentation/Balancing → Model & Transfer Learning → Training → Results → Discussion (impact, deployment, limits, ethics, future work) → Conclusion → References → Appendix (video URL, repo link).
-- [ ] 9.2 Every section = figure + explanation (rubric wants "graphical evidence" for all steps).
-- [ ] 9.3 Map each section to LO1–LO4 explicitly.
-- [ ] 9.4 Innovation/critical discussion [5]: real clinic use, edge deployment, model limits, dataset bias, future (higher res, ordinal loss, ensembles).
+- [x] 9.1 Report drafted in report/report.md (all sections)
+- [x] 9.2 Every section = figure + explanation (rubric wants "graphical evidence" for all steps).
+- [x] 9.3 Map each section to LO1–LO4 explicitly.
+- [x] 9.4 Innovation/critical discussion [5]: real clinic use, edge deployment, model limits, dataset bias, future (higher res, ordinal loss, ensembles).
 - [ ] 9.5 Page-count check, export PDF.
 
 ---
