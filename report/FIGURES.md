@@ -51,3 +51,9 @@ of the report (`**Demo video:** _[URL to be added]_`).
 The report is ~5,800 words. With all 24 figures at the widths above it lands around 19–20 pages.
 If you overrun: drop the five TRIM figures first, then shrink Figures 2, 6 and 23 (the tall
 multi-row grids) — they stay readable at half height.
+
+## Presentation
+
+The slide deck for the demo video lives at
+https://claude.ai/artifact/W2QMVbs46Ukq9dSygtkGUc (29 slides, speaker notes on every slide).
+It is private — share it from the page's Share menu if anyone else needs to open it.
